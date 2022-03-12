@@ -12,26 +12,5 @@ actor.save
 movie = Movie.new({title: "Toy Story", year: 1995, plot: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room."})
 movie.save
 
-#I cannot seed the data. I keep getting this error: ~/actualize/movie-app % rails db:seed
-# You have 1 pending migration:
-# 20220311150150 CreateMovies
-# Run `bin/rails db:migrate` to update your database then try again.
-# ~/actualize/movie-app % bin/rails db:migrate
-# == 20220311150150 CreateMovies: migrating =====================================
-# -- create_table(:movies)
-# rails aborted!
-# StandardError: An error has occurred, this and all later migrations canceled:
-
-# PG::DuplicateTable: ERROR:  relation "movies" already exists
-# /Users/samanthasharff/Actualize/movie-app/db/migrate/20220311150150_create_movies.rb:3:in `change'
-
-# Caused by:
-# ActiveRecord::StatementInvalid: PG::DuplicateTable: ERROR:  relation "movies" already exists
-# /Users/samanthasharff/Actualize/movie-app/db/migrate/20220311150150_create_movies.rb:3:in `change'
-
-# Caused by:
-# PG::DuplicateTable: ERROR:  relation "movies" already exists
-# /Users/samanthasharff/Actualize/movie-app/db/migrate/20220311150150_create_movies.rb:3:in `change'
-# Tasks: TOP => db:migrate
-# (See full trace by running task with --trace)
-# ~/actualize/movie-app % db 
+movie = Movie.new ({title: "Harry Potter and the Half-Blood Prince", year: 2009, plot: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past."})
+movie.save
