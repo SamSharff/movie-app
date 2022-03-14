@@ -10,13 +10,13 @@ class MoviesController < ApplicationController
     render json: {message: "You chose #{movie.title}."}
   end 
 
-  def includes # I can't get this to work, but here are my two attempts
-    
-    #1) movie = Movie.includes(:title, :year)
-    # render json: movie.as_json
-
-    #2) Movie.includes(:title, :year)
-    # render json: Movie.as_json
-  end
-
 end
+
+# def includes # I can't get this to work, but here are my two attempts
+    
+  #   #1) movie = Movie.includes(:title, :year)
+  #   # render json: movie.as_json
+
+  #   #2) Movie.includes(:title, :year)
+  #   # render json: Movie.as_json
+  # end
