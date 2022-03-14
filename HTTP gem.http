@@ -1,1 +1,9 @@
-GET http://localhost:3000/one_movie
+# GET http://localhost:3000/one_movie
+
+
+POST http://localhost:3000/actor_query_param
+Content-Type: application/json
+
+{
+  "id": 8
+}
