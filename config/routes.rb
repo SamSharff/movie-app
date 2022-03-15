@@ -8,6 +8,7 @@ delete "/actors/:id", controller: "actors", action: "destroy"
 get "/movies", controller: "movies", action: "index"
 post "/movies", controller: "movies", action: "create"
 get "/movies/:id", controller: "movies", action: "show"
+patch "/movies/:id", controller: "movies", action: "update"
 
 
 end
