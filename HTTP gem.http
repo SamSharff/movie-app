@@ -1,9 +1,21 @@
-# GET http://localhost:3000/one_movie
+###ACTORS INDEX
+GET http://localhost:3000/actors
 
+###ACTORS CREATE
+# POST http://localhost:3000/actors
+# Content-Type: application/json
 
-POST http://localhost:3000/actor_query_param
-Content-Type: application/json
+# {
+#   "first_name": "Jen",
+#   "last_name": "Anniston",
+#   "known_for": "Friends"
+# }
 
-{
-  "id": 8
-}
+GET http://localhost:3000/one_movie
+
+# POST http://localhost:3000/actor_query_param
+# Content-Type: application/json
+
+# {
+#   "id": 8
+# }

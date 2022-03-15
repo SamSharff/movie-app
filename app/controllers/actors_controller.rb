@@ -1,8 +1,20 @@
 class ActorsController < ApplicationController
   def index
-  actors = Actor.all
-  render json: actors.as_json
+    actors = Actor.all
+    render json: actors.as_json
   end
+
+  def create
+    actor = Actor.new(
+    first_name: params["first_name"],
+    last_name: params["last_name"],
+    known_for: params["known_for"]
+
+    )
+    actor.save 
+    render json: actor.as_json
+  end
+
 
   def one_actor
     actor = Actor.find_by(id: 4)
