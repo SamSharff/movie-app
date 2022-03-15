@@ -15,6 +15,12 @@ class MoviesController < ApplicationController
     render json: movie.as_json
   end
 
+  def show
+    movie_id = params["id"]
+    movie = Movie.find_by(id: movie_id)
+    render json: movie.as_json
+  end
+
 end
 
 
