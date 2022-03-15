@@ -1,18 +1,27 @@
-###ACTORS INDEX
-# GET http://localhost:3000/actors
+##ACTORS INDEX
+GET http://localhost:3000/actors
 
-###ACTORS CREATE
-# POST http://localhost:3000/actors
-# Content-Type: application/json
+##ACTORS CREATE
+POST http://localhost:3000/actors
+Content-Type: application/json
 
-# {
-#   "first_name": "Jen",
-#   "last_name": "Anniston",
-#   "known_for": "Friends"
-# }
+{
+  "first_name": "Jen",
+  "last_name": "Anniston",
+  "known_for": "Friends"
+}
 
 ###ACTOR SHOW
 GET http://localhost:3000/actors/9
+
+###ACTOR UPDATE
+PATCH http://localhost:3000/actors/14
+Content-Type: application/json
+
+{
+  "known_for": "The Morning Show"
+}
+
 
 # GET http://localhost:3000/one_movie
 
