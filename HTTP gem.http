@@ -22,6 +22,8 @@ Content-Type: application/json
   "known_for": "The Morning Show"
 }
 
+###ACTOR DESTROY
+DELETE http://localhost:3000/actors/13
 
 # GET http://localhost:3000/one_movie
 

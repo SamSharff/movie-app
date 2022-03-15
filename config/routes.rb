@@ -3,6 +3,8 @@ get "/actors", controller: "actors", action: "index"
 post "/actors", controller: "actors", action: "create"
 get "/actors/:id", controller: "actors", action: "show"
 patch "/actors/:id", controller: "actors", action: "update"
+delete "/actors/:id", controller: "actors", action: "destroy"
+
 
 
 # get "/actor", controller: "actors", action: "one_actor"

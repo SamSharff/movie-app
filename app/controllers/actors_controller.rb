@@ -33,6 +33,15 @@ class ActorsController < ApplicationController
     render json: actor.as_json 
   end
   
+  def destroy
+    actor_id = params["id"]
+    actor = Actor.find_by(id: actor_id)
+
+    actor.destroy
+    render json: {message: "CRUSH! BOOM! SLAM! Destruction complete!"}.as_json
+  end
+
+
 #   def one_actor
 #     actor = Actor.find_by(id: 4)
 #     render json: actor.as_json
