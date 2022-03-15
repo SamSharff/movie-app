@@ -6,11 +6,20 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
-actor.save
+# actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
+# actor.save
 
-movie = Movie.new({title: "Toy Story", year: 1995, plot: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room."})
-movie.save
+# actor = Actor.new({first_name: "Kate", last_name: "Winslet", known_for: "Titanic"})
+# actor.save
 
-movie = Movie.new ({title: "Harry Potter and the Half-Blood Prince", year: 2009, plot: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past."})
-movie.save
+# actor = Actor.new({first_name: "Amy", last_name: "Poehler", known_for: "Parks and Rec"})
+# actor.save
+
+# actor = Actor.new({first_name: "Daniel", last_name: "Radcliffe", known_for: "Harry Potter"})
+# actor.save
+
+# movie = Movie.new({title: "Toy Story", year: 1995, plot: "A cowboy doll is profoundly threatened and jealous when a new spaceman figure supplants him as top toy in a boy's room."})
+# movie.save
+
+# movie = Movie.new ({title: "Harry Potter and the Half-Blood Prince", year: 2009, plot: "As Harry Potter begins his sixth year at Hogwarts, he discovers an old book marked as 'the property of the Half-Blood Prince' and begins to learn more about Lord Voldemort's dark past."})
+# movie.save
