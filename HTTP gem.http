@@ -1,5 +1,5 @@
 ###ACTORS INDEX
-GET http://localhost:3000/actors
+# GET http://localhost:3000/actors
 
 ###ACTORS CREATE
 # POST http://localhost:3000/actors
@@ -11,7 +11,10 @@ GET http://localhost:3000/actors
 #   "known_for": "Friends"
 # }
 
-GET http://localhost:3000/one_movie
+###ACTOR SHOW
+GET http://localhost:3000/actors/9
+
+# GET http://localhost:3000/one_movie
 
 # POST http://localhost:3000/actor_query_param
 # Content-Type: application/json
