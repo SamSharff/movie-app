@@ -33,6 +33,15 @@ class MoviesController < ApplicationController
     render json: movie.as_json
   end
 
+  def destroy
+    movie_id = params["id"]
+    movie = Movie.find_by(id: movie_id)
+
+    movie.destroy
+    render json: {message: "BOOM! CRASH! SLAM! Your movie has been destroy!"}.as_json
+  end
+
+
 end
 
 

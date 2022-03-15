@@ -51,6 +51,9 @@ Content-Type: application/json
   "plot": "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody before he becomes a museum toy property with his roundup gang Jessie, Prospector, and Bullseye."
 }
 
+###MOVIES DESTROY
+DELETE http://localhost:3000/movies/8
+
 # POST http://localhost:3000/actor_query_param
 # Content-Type: application/json
 
