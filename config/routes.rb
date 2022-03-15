@@ -6,6 +6,8 @@ patch "/actors/:id", controller: "actors", action: "update"
 delete "/actors/:id", controller: "actors", action: "destroy"
 
 get "/movies", controller: "movies", action: "index"
+post "/movies", controller: "movies", action: "create"
+
 end
 
 # get "/includes", controller: "movies", action: "includes"

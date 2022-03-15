@@ -3,7 +3,21 @@ class MoviesController < ApplicationController
     movies = Movie.all
     render json: movies.as_json
   end
+
+  def create
+    movie = Movie.new(
+      title: params["title"],
+      year: params["year"],
+      plot: params["plot"]
+    
+      )
+    movie.save
+    render json: movie.as_json
+  end
+
 end
+
+
 
 # def includes # I can't get this to work, but here are my two attempts
     

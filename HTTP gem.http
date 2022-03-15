@@ -11,10 +11,10 @@ Content-Type: application/json
   "known_for": "Friends"
 }
 
-###ACTOR SHOW
+###ACTORS SHOW
 GET http://localhost:3000/actors/9
 
-###ACTOR UPDATE
+###ACTORS UPDATE
 PATCH http://localhost:3000/actors/14
 Content-Type: application/json
 
@@ -22,10 +22,21 @@ Content-Type: application/json
   "known_for": "The Morning Show"
 }
 
-###ACTOR DESTROY
+###ACTORS DESTROY
 DELETE http://localhost:3000/actors/13
 
-# GET http://localhost:3000/one_movie
+###MOVIES INDEX
+GET http://localhost:3000/movies
+
+###MOVIES CREATE
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+  "title": "Titanic",
+  "year": 1997,
+  "plot": "A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic."
+}
 
 # POST http://localhost:3000/actor_query_param
 # Content-Type: application/json
