@@ -46,13 +46,11 @@ Content-Type: application/json
 GET http://localhost:3000/movies/11 
 
 ###MOVIES UPDATE
-PATCH http://localhost:3000/movies/5
+PATCH http://localhost:3000/movies/12
 Content-Type: application/json
 
 {
-  "title": "Toy Story 2",
-  "year": 1999,
-  "plot": "When Woody is stolen by a toy collector, Buzz and his friends set out on a rescue mission to save Woody before he becomes a museum toy property with his roundup gang Jessie, Prospector, and Bullseye."
+  "english": true
 }
 
 ###MOVIES DESTROY
