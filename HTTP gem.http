@@ -54,7 +54,7 @@ Content-Type: application/json
 }
 
 ###MOVIES DESTROY
-DELETE http://localhost:3000/movies/8
+DELETE http://localhost:3000/movies/12
 
 # POST http://localhost:3000/actor_query_param
 # Content-Type: application/json
