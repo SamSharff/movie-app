@@ -8,7 +8,8 @@ Content-Type: application/json
 {
   "first_name": "Jen",
   "last_name": "Anniston",
-  "known_for": "Friends"
+  "known_for": "Friends",
+  
 }
 
 ###ACTORS SHOW
@@ -19,7 +20,9 @@ PATCH http://localhost:3000/actors/14
 Content-Type: application/json
 
 {
-  "known_for": "The Morning Show"
+  "known_for": "The Morning Show",
+  "gender": "F",
+  "age": 53
 }
 
 ###ACTORS DESTROY
