@@ -12,8 +12,11 @@ class MoviesController < ApplicationController
       director: params["director"],
     
       )
-    movie.save
-    render json: movie.as_json
+    if movie.save
+      render json: movie.as_json
+    else
+      render json: {errors: movie.errors.full_messages}, status: 422
+    end
   end
 
   def show
@@ -31,8 +34,11 @@ class MoviesController < ApplicationController
     movie.plot = params["plot"] || movie.plot
     movie.director = params["director"] || movie.director
     
-    movie.save
-    render json: movie.as_json
+    if movie.save
+      render json: movie.as_json
+    else
+      render json: {errors: movie.errors.full_messages}, status: 422
+    end
   end
 
   def destroy

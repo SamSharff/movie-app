@@ -21,7 +21,7 @@ PATCH http://localhost:3000/actors/14
 Content-Type: application/json
 
 {
-  "known_for": "Friends",
+  "known_for": "Test",
   "gender": "F",
   "age": 3
 }
@@ -37,21 +37,21 @@ POST http://localhost:3000/movies
 Content-Type: application/json
 
 {
-  "title": "Casablanca",
-  "year": 1942,
-  "plot": "A cynical expatriate American cafe owner struggles to decide whether or not to help his former lover and her fugitive husband escape the Nazis in French Morocco.",
-  "director": "Michael Curtiz"
+  "title": "Test",
+  "year": 194,
+  "plot": "Test plot for movies create",
+  "director": "Test Director"
 }
 
 ###MOVIES SHOW
 GET http://localhost:3000/movies/11 
 
 ###MOVIES UPDATE
-PATCH http://localhost:3000/movies/12
+PATCH http://localhost:3000/movies/4
 Content-Type: application/json
 
 {
-  "english": true
+  "year": 123
 }
 
 ###MOVIES DESTROY
