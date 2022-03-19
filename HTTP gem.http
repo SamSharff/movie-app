@@ -6,9 +6,10 @@ POST http://localhost:3000/actors
 Content-Type: application/json
 
 {
-  "first_name": "Jen",
-  "last_name": "Anniston",
-  "known_for": "Friends",
+  "first_name": "Test",
+  "last_name": "TestSmith",
+  "known_for": "TestShow",
+  "test": 54
   
 }
 
@@ -20,9 +21,9 @@ PATCH http://localhost:3000/actors/14
 Content-Type: application/json
 
 {
-  "known_for": "The Morning Show",
+  "known_for": "Friends",
   "gender": "F",
-  "age": 53
+  "age": 3
 }
 
 ###ACTORS DESTROY
