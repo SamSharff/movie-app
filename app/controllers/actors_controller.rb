@@ -1,7 +1,7 @@
 class ActorsController < ApplicationController
   def index
     @actors = Actor.all
-    render json: @actors.as_json
+    render :index
   end
 
   def create
@@ -15,7 +15,7 @@ class ActorsController < ApplicationController
 
     )
     if @actor.save 
-      render json: @actor.as_json
+      render :show
     else
       render json: {errors: @actor.errors.full_messages}, status: 422
     end
@@ -24,7 +24,7 @@ class ActorsController < ApplicationController
   def show
     actor_id = params["id"]
     @actor = Actor.find_by(id: actor_id)
-    render json: @actor.as_json    
+    render :show    
   end
 
   def update
@@ -39,7 +39,7 @@ class ActorsController < ApplicationController
     @actor.movie_id = params["movie_id"] || @actor.movie_id
 
     if @actor.save 
-      render json: @actor.as_json 
+      render :show 
     else
       render json: {errors: @actor.errors.full_messages}, status: 422
     end
