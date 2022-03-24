@@ -1,3 +1,9 @@
+# @jwt_Kali = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NDgyMTg3NTN9.nq_xMJ5vFbf4EdrL8sWGN-S8KTkxmafFeJK3pxgNIC4
+
+# @jwt_Sam = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDgyMTg4NDd9.cqOodL7y5J4_U8Qw6r9LSriOj9sPFUf8aF15gLLRMTM
+
+# @jwt_Evelyn = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyMTg4Nzd9.lsJZ3DxePht-9g_8RfllvD_yh0E24NSpzRuJIVLuZak
+
 ##ACTORS INDEX
 GET http://localhost:3000/actors.json
 
@@ -58,7 +64,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/movies/12
 
 
-### USERES CREATE (signup)
+### USERS CREATE (signup)
 POST http://localhost:3000/users.json
 Content-Type: application/json
 
@@ -67,4 +73,13 @@ Content-Type: application/json
   "email": "Kali@example.com",
   "password": "password",
   "password_confirmation": "password"
+}
+
+### SESSSIONS CREATE (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "Evelyn@example.com",
+  "password": "password"
 }
