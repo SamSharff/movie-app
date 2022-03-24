@@ -12,6 +12,8 @@ patch "/movies/:id", controller: "movies", action: "update"
 delete "/movies/:id", controller: "movies", action: "destroy"
 
 post "/users" => "users#create"
+
+post "/sessions" => "sessions#create"
 end
 
 # get "/includes", controller: "movies", action: "includes"
