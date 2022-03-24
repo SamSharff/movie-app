@@ -23,13 +23,12 @@ Content-Type: application/json
 GET http://localhost:3000/actors/9
 
 ###ACTORS UPDATE
-PATCH http://localhost:3000/actors/14
+PATCH http://localhost:3000/actors/14.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyMTg4Nzd9.lsJZ3DxePht-9g_8RfllvD_yh0E24NSpzRuJIVLuZak
 Content-Type: application/json
 
 {
-  "known_for": "Test",
-  "gender": "F",
-  "age": 3
+  "known_for": "The Morning Show"
 }
 
 ###ACTORS DESTROY
@@ -80,6 +79,6 @@ POST http://localhost:3000/sessions.json
 Content-Type: application/json
 
 {
-  "email": "Evelyn@example.com",
+  "email": "Sam@example.com",
   "password": "password"
 }
