@@ -57,9 +57,14 @@ Content-Type: application/json
 ###MOVIES DESTROY
 DELETE http://localhost:3000/movies/12
 
-# POST http://localhost:3000/actor_query_param
-# Content-Type: application/json
 
-# {
-#   "id": 8
-# }
+### USERES CREATE (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Kali",
+  "email": "Kali@example.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
