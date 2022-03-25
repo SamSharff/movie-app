@@ -35,7 +35,7 @@ Content-Type: application/json
 DELETE http://localhost:3000/actors/13
 
 ###MOVIES INDEX
-GET http://localhost:3000/movies
+GET http://localhost:3000/movies.json
 
 ###MOVIES CREATE
 POST http://localhost:3000/movies
