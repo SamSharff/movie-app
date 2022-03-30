@@ -14,6 +14,8 @@ delete "/movies/:id", controller: "movies", action: "destroy"
 post "/users" => "users#create"
 
 post "/sessions" => "sessions#create"
+
+post "/movie_genres" => "movie_genres#create"
 end
 
 # get "/includes", controller: "movies", action: "includes"
