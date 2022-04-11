@@ -1,5 +1,5 @@
 class ActorsController < ApplicationController
-  before_action :authenticate_admin, except: [:index, :show]
+  # before_action :authenticate_admin, except: [:index, :show]
   
   def index
     @actors = Actor.all
@@ -49,7 +49,7 @@ class ActorsController < ApplicationController
   
   def destroy
     actor_id = params["id"]
-    @actor = Actor.find_by(id: actor_id)
+    actor = Actor.find_by(id: actor_id)
 
     actor.destroy
     render json: {message: "CRUSH! BOOM! SLAM! Destruction complete!"}.as_json

@@ -9,6 +9,5 @@
     movie: actor.movie,
     created_at: actor.created_at,
     updated_at: actor.updated_at
-    # url: actor_url(actor, format: :json)
   }
 end
