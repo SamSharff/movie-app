@@ -5,8 +5,8 @@
     year: movie.year,
     plot: movie.plot,
     director: movie.director,
-    actors: movie.actors,
-    genres: movie.genres,
+    # actors: movie.actors,
+    # genres: movie.genres,
     english: movie.english
   }
 end

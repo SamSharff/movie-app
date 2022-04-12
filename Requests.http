@@ -1,26 +1,28 @@
 # @jwt_Kali = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NDgyMTg3NTN9.nq_xMJ5vFbf4EdrL8sWGN-S8KTkxmafFeJK3pxgNIC4
 
-@jwt_Sam = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDk3NjgzNzF9.Y32LTD85fkBtvfJ2rLvsF-Hb5NKIaSnVjhb7pCgMFiY
+# @jwt_Sam = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDk4NTIwNzR9.qaFiFINIkGxgGATYUgCOF41OPdP_MyDs4wRbuGAjBns
 
 # @jwt_Evelyn = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyMTg4Nzd9.lsJZ3DxePht-9g_8RfllvD_yh0E24NSpzRuJIVLuZak
 
 ##ACTORS INDEX
 GET http://localhost:3000/actors.json
 
+
 ##ACTORS CREATE
-POST http://localhost:3000/actors
+POST http://localhost:3000/actors.json
 Content-Type: application/json
 
 {
   "first_name": "Test",
-  "last_name": "TestSmith",
-  "known_for": "TestShow",
-  "test": 54
-  
+  "last_name": "Smith",
+  "known_for": "Toy Story",  
+  "gender": "woman",  
+  "age": 54,  
+  "movie_id": 1 
 }
 
 ###ACTORS SHOW
-GET http://localhost:3000/actors/9
+GET http://localhost:3000/actors/9.json
 
 ###ACTORS UPDATE
 PATCH http://localhost:3000/actors/14.json
@@ -32,27 +34,28 @@ Content-Type: application/json
 }
 
 ###ACTORS DESTROY
-DELETE http://localhost:3000/actors/13
+DELETE http://localhost:3000/actors/15
 
 ###MOVIES INDEX
 GET http://localhost:3000/movies.json
 
 ###MOVIES CREATE
-POST http://localhost:3000/movies
+POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
-  "title": "Test",
-  "year": 194,
+  "title": "Test2",
+  "year": 19999,
   "plot": "Test plot for movies create",
-  "director": "Test Director"
+  "director": "Test Director",
+  "english": false
 }
 
 ###MOVIES SHOW
-GET http://localhost:3000/movies/11 
+GET http://localhost:3000/movies/11.json
 
 ###MOVIES UPDATE
-PATCH http://localhost:3000/movies/4
+PATCH http://localhost:3000/movies/17.json
 Content-Type: application/json
 
 {

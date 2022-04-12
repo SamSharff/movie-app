@@ -12,8 +12,9 @@ class MoviesController < ApplicationController
       year: params["year"],
       plot: params["plot"],
       director: params["director"],
-      english: params["english"],
-      actors: params["actors"]
+      # actors: params["actors"],
+      # genres: params["genres"],
+      english: params["english"]
       )
     if @movie.save
       render :show
