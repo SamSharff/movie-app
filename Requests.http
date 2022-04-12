@@ -63,7 +63,7 @@ Content-Type: application/json
 }
 
 ###MOVIES DESTROY
-DELETE http://localhost:3000/movies/12
+DELETE http://localhost:3000/movies/18
 
 
 ### USERS CREATE (signup)
