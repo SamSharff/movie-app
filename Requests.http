@@ -63,7 +63,7 @@ Content-Type: application/json
 }
 
 ###MOVIES DESTROY
-DELETE http://localhost:3000/movies/18
+DELETE http://localhost:3000/movies/
 
 
 ### USERS CREATE (signup)
@@ -71,8 +71,8 @@ POST http://localhost:3000/users.json
 Content-Type: application/json
 
 {
-  "name": "Kali",
-  "email": "Kali@example.com",
+  "name": "Greg",
+  "email": "Greg@example.com",
   "password": "password",
   "password_confirmation": "password"
 }
@@ -94,3 +94,6 @@ Content-Type: application/json
   "genre_id": 1,
   "movie_id": 2
 }
+
+###USERS DESTROY
+DELETE http://localhost:3000/users/9
