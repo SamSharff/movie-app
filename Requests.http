@@ -44,26 +44,35 @@ POST http://localhost:3000/movies.json
 Content-Type: application/json
 
 {
-  "title": "Test2",
-  "year": 19999,
-  "plot": "Test plot for movies create",
-  "director": "Test Director",
-  "english": false
+  "title": "death on the nile",
+  "year": 2022,
+  "plot": "Test plot",
+  "director": "Kenneth Branaugh",
+  "english": true
 }
 
 ###MOVIES SHOW
-GET http://localhost:3000/movies/11.json
+GET http://localhost:3000/movies/29.json
 
 ###MOVIES UPDATE
-PATCH http://localhost:3000/movies/17.json
+PATCH http://localhost:3000/movies/29.json
 Content-Type: application/json
 
 {
-  "year": 123
+  "year": 456
 }
 
 ###MOVIES DESTROY
-DELETE http://localhost:3000/movies/
+DELETE http://localhost:3000/movies/29
+
+###MOVIE_GENRES CREATE
+POST http://localhost:3000/movie_genres
+Content-Type: application/json
+
+{
+  "genre_id": 1,
+  "movie_id": 2
+}
 
 
 ### USERS CREATE (signup)
@@ -86,14 +95,6 @@ Content-Type: application/json
   "password": "password"
 }
 
-###MOVIE_GENRES CREATE
-POST http://localhost:3000/movie_genres
-Content-Type: application/json
-
-{
-  "genre_id": 1,
-  "movie_id": 2
-}
 
 ###USERS DESTROY
 DELETE http://localhost:3000/users/9
