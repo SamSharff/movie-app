@@ -1,6 +1,6 @@
 # @jwt_Kali = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjo1LCJleHAiOjE2NDgyMTg3NTN9.nq_xMJ5vFbf4EdrL8sWGN-S8KTkxmafFeJK3pxgNIC4
 
-# @jwt_Sam = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NDk4NTIwNzR9.qaFiFINIkGxgGATYUgCOF41OPdP_MyDs4wRbuGAjBns
+# @jwt_Sam = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTEzNDk3NzR9.WQRerAeIPo6ivFbbXOJmYlQLKtHf_qLP5bHuPvuTF2c
 
 # @jwt_Evelyn = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyMTg4Nzd9.lsJZ3DxePht-9g_8RfllvD_yh0E24NSpzRuJIVLuZak
 
@@ -26,11 +26,11 @@ GET http://localhost:3000/actors/9.json
 
 ###ACTORS UPDATE
 PATCH http://localhost:3000/actors/14.json
-Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NDgyMTg4Nzd9.lsJZ3DxePht-9g_8RfllvD_yh0E24NSpzRuJIVLuZak
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjozLCJleHAiOjE2NTEzNDk3NzR9.WQRerAeIPo6ivFbbXOJmYlQLKtHf_qLP5bHuPvuTF2c
 Content-Type: application/json
 
 {
-  "known_for": "The Morning Show"
+  "known_for": "Friends and The Morning Show"
 }
 
 ###ACTORS DESTROY
